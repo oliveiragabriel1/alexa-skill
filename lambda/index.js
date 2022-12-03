@@ -25,11 +25,10 @@ const HelloWorldIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'HelloWorldIntent';
     },
     handle(handlerInput) {
-        const speakOutput = 'Okay';
+        const speakOutput = 'O que deseja?';
         
         return handlerInput.responseBuilder
-            .speak(speakOutput)
-            .addConfirmIntentDirective()
+            .reprompt(speakOutput)
             .getResponse();
     }
 };
