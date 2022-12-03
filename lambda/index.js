@@ -32,6 +32,7 @@ const HelloWorldIntentHandler = {
             .getResponse();
     }
 };
+
 const JarvisIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
