@@ -29,7 +29,7 @@ const HelloWorldIntentHandler = {
         
         return handlerInput.responseBuilder
             .speak(speakOutput)
-            .addDelegateDirective
+            .addDelegateDirective()
             .getResponse();
     }
 };
